@@ -34,12 +34,12 @@ public class MainController {
         return "eggsauce";
     }
 
-        @RequestMapping("/recipe")
-        public String showRecipe(Model model) {
+    @RequestMapping("/recipe")
+    public String showRecipe(Model model) {
         model.addAttribute("menuoption", "recipe");
-            return "recipe";
-        }
-
-
+        return "recipe";
     }
+
+
+}
 
