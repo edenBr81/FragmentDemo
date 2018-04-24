@@ -21,4 +21,12 @@ public class MainController {
         return "firstlink";
     }
 
+    @RequestMapping("/eggsauce")
+    public String showEggsauce(Model model) {
+        model.addAttribute("menuoption", "eggsauce");
+        return "eggsauce";
+    }
+
+
+
 }
