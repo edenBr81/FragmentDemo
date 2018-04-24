@@ -14,11 +14,19 @@ public class MainController {
     }
 
     @RequestMapping("/firstlink")
-    public String showFirstLink(Model model){
+    public String showFirstLink(Model model)
+    {
 
-        model.addAttribute("menuoption", "firstlink");
+        model.addAttribute("menuoption","firstlink");
         return "firstlink";
     }
+    @RequestMapping("/injera")
+    public String showInjera(Model model)
+    {
+        model.addAttribute("menuoption","injera");
+        return "injera";
+    }
+
 
     @RequestMapping("/eggsauce")
     public String showEggsauce(Model model) {
@@ -26,11 +34,11 @@ public class MainController {
         return "eggsauce";
     }
 
-        @RequestMapping("/recipe")
-        public String showRecipe(Model model) {
+    @RequestMapping("/recipe")
+    public String showRecipe(Model model) {
         model.addAttribute("menuoption", "recipe");
-            return "recipe";
-        }
+        return "recipe";
+    }
 
         @RequestMapping("/pumpkin")
     public String showPumpkin(Model model)
@@ -40,5 +48,5 @@ public class MainController {
         }
 
 
-    }
+}
 

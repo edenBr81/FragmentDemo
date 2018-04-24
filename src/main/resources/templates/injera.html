@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head th:replace="/fragments/navbase::navhead">
+    <meta charset="UTF-8">
+    <title th:text="${title}==''?${title}:'Thymeleaf tutorial'"></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+<nav th:replace="/fragments/navbase::thenav(${menuoption})"></nav>
+<div th:fragment="injera">
+    <h5>Injera</h5>
+
+<ul>
+    <p class="tesh">Ethiopia</p>
+
+    <img src="css/images/injera.jpg" alt="Smiley face" height="125" width="125">
+    <li>Ingredients</li>
+
+    <li>¾ cup teff flour (found in health food shops)</li>
+
+    <li>3½ cups water</li>
+
+    <li>pinch of salt</li>
+
+    <p>Directions</p>
+
+
+
+    <li>Standing time 2 days</li>
+
+    <li>Mix teff with the water. Leave to stand in a covered bowl for a couple of days until it starts to bubble.</li>
+
+    <li>The mixture should be slightly sour and the consistency of crêpe batter. Stir in the salt.</li>
+
+    <li>Add a ladle of the mixture to a pre-heated skillet and cook slowly until air bubbles rise to the top.</li>
+
+    <li>Do not let it brown, and make sure that it is not too thick.</li>
+
+</ul>
+</div>
+    <span th:replace="/fragments/navbase::scripts"></span>
+</body>
+</html>
