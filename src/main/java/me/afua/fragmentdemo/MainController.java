@@ -27,6 +27,12 @@ public class MainController {
         return "injera";
     }
 
+    @RequestMapping("/kitfo")
+    public String showKitfo(Model model) {
+        model.addAttribute("menuoption", "kitfo");
+        return "kitfo";
+    }
+
 
     @RequestMapping("/eggsauce")
     public String showEggsauce(Model model) {
