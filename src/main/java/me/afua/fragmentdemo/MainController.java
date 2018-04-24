@@ -38,6 +38,11 @@ public class MainController {
         return "kitfo";
     }
 
+    @RequestMapping("/wings")
+    public String showWings(Model model) {
+        model.addAttribute("menuoption", "wings");
+        return "wings";
+    }
 
     @RequestMapping("/eggsauce")
     public String showEggsauce(Model model) {
@@ -48,7 +53,7 @@ public class MainController {
     @RequestMapping("/recipe")
     public String showRecipe(Model model) {
         model.addAttribute("menuoption", "wings");
-        return "recipe";
+        return "wings";
     }
 
     @RequestMapping("/pumpkin")
