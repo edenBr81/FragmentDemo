@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<title>Title</title>
+<head th:replace="/fragments/navbase::navhead">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <style>
+        body{font-family: "Times New Roman", Georgia, Serif:}
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+<nav th:replace="/fragments/navbase::thenav(${menuoption})"></nav>
+<div class="container">
+    <h6 th:text="${menuoption}"></h6>
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="css/Images/images/taiwan.jpg" alt="Flag" width="1000" height="600">
+        <div class="w3-display-bottomleft w3-padding-large <!--w3-opacity-->">
+            <h1 class="w3-xxlarge">Recipe From Taiwan</h1>
+        </div>
+    </header>
+
+    <div class="w3-content" style="max-width:1100px">
+
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="css/Images/images/pumpkin_noodles3.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="200" height="100">
+            </div>
+
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">Pumpkin Rice Noodles</h1><br>
+                <h5 class="w3-center">Ingrediants</h5>
+                <p class="w3-center">
+                    Serves 1 | Prep Time: 15 minutes | Cook Time: 5 minutes
+                    100g (3.5 oz) dried rice vermicelli.
+                    2 tablespoons oil.
+                    2 cloves garlic, minced.
+                    100g (3.5 oz) ground pork.
+                    100g (3.5 oz) pumpkin (or kabocha), diced.
+                    ½ cup water.
+                    2 tablespoons soy sauce.
+                    1 tablespoon sweet soy sauce.
+                    3 dashes white pepper.
+                    <span class="w3-tag w3-light-grey">Follow</span> ingredients.</p>
+
+                <h5 class="w3-center">Now Cook!!!</h5>
+                <p class="w3-large w3-text-grey w3-hide-medium">
+                    Method:
+                    1. Soak the dried rice vermicelli in warm water for about 20 minutes. Drain the water and set aside.
+                    2. Heat up the oil in a wok and add the garlic. Stir-fry the garlic until aromatic before adding the ground pork and pumpkin.
+                    3. Add the water, soy sauce, sweet soy sauce, white pepper and bring to boil.
+                    4. Add the rice vermicelli into the wok, stir to combine well with the ingredients in the wok. Continue to stir fry until the vermicelli is cooked through and soaked up the sauce. Dish out and serve immediately.
+                    Previous Next
+
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<span class="w3-center w3-light-grey w3-padding-32" th:replace="/fragments/navbase::scripts"></span>
+</body>
+</html>

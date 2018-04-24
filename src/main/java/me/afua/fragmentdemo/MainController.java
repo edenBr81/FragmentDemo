@@ -46,6 +46,13 @@ public class MainController {
         return "recipe";
     }
 
+        @RequestMapping("/pumpkin")
+    public String showPumpkin(Model model)
+        {
+            model.addAttribute("menuoption", "pumpkin");
+            return "pumpkin";
+        }
+
 
 }
 
