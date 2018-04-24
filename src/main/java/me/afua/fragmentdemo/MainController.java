@@ -14,11 +14,19 @@ public class MainController {
     }
 
     @RequestMapping("/firstlink")
-    public String showFirstLink(Model model){
+    public String showFirstLink(Model model)
+    {
 
-        model.addAttribute("menuoption", "firstlink");
+        model.addAttribute("menuoption","firstlink");
         return "firstlink";
     }
+    @RequestMapping("/injera")
+    public String showInjera(Model model)
+    {
+        model.addAttribute("menuoption","injera");
+        return "injera";
+    }
+
 
     @RequestMapping("/eggsauce")
     public String showEggsauce(Model model) {
