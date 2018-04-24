@@ -33,6 +33,12 @@ public class MainController {
         return "injera";
     }
 
+    @RequestMapping("/kitfo")
+    public String showKitfo(Model model) {
+        model.addAttribute("menuoption", "kitfo");
+        return "kitfo";
+    }
+
 
     @RequestMapping("/eggsauce")
     public String showEggsauce(Model model) {
@@ -40,12 +46,19 @@ public class MainController {
         return "eggsauce";
     }
 
-        @RequestMapping("/recipe")
-        public String showRecipe(Model model) {
+    @RequestMapping("/recipe")
+    public String showRecipe(Model model) {
         model.addAttribute("menuoption", "recipe");
-            return "recipe";
+        return "recipe";
+    }
+
+        @RequestMapping("/pumpkin")
+    public String showPumpkin(Model model)
+        {
+            model.addAttribute("menuoption", "pumpkin");
+            return "pumpkin";
         }
 
 
-    }
+}
 
