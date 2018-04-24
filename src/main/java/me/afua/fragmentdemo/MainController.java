@@ -20,11 +20,23 @@ public class MainController {
         model.addAttribute("menuoption","firstlink");
         return "firstlink";
     }
+    @RequestMapping("/makroudhs")
+    public String showMakhrouds(Model model)
+    {
+        model.addAttribute("menuoption","makroudhs");
+        return "makroudhs";
+    }
     @RequestMapping("/injera")
     public String showInjera(Model model)
     {
         model.addAttribute("menuoption","injera");
         return "injera";
+    }
+
+    @RequestMapping("/kitfo")
+    public String showKitfo(Model model) {
+        model.addAttribute("menuoption", "kitfo");
+        return "kitfo";
     }
 
 
