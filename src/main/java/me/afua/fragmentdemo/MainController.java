@@ -14,7 +14,7 @@ public class MainController {
     }
 
     @RequestMapping("/firstlink")
-    public String showFirstLink(Model model) {
+    public String showFirstLink(Model model){
 
         model.addAttribute("menuoption", "firstlink");
         return "firstlink";
