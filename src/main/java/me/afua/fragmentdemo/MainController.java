@@ -13,15 +13,8 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping("/firstlink")
-    public String showFirstLink(Model model)
-    {
-
-        model.addAttribute("menuoption","firstlink");
-        return "firstlink";
-    }
     @RequestMapping("/makroudhs")
-    public String showMakhrouds(Model model)
+    public String showMakroudhs(Model model)
     {
         model.addAttribute("menuoption","makroudhs");
         return "makroudhs";
@@ -52,12 +45,12 @@ public class MainController {
         return "recipe";
     }
 
-        @RequestMapping("/pumpkin")
+    @RequestMapping("/pumpkin")
     public String showPumpkin(Model model)
-        {
-            model.addAttribute("menuoption", "pumpkin");
-            return "pumpkin";
-        }
+    {
+        model.addAttribute("menuoption", "pumpkin");
+        return "pumpkin";
+    }
 
 
 }
