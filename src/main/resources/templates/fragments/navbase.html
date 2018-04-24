@@ -19,10 +19,9 @@
             <li class="nav-item" th:classappend="${menuoption}=='home'?'active':''">
                 <a class="nav-link"  href="/">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item" th:classappend="${menuoption}=='firstlink'?'active':''">
-                <a class="nav-link"  href="/firstlink">Link</a>
+            <li class="nav-item" th:classappend="${menuoption}=='listrecipes'?'active':''">
+                <a class="nav-link" href="/listrecipes">List Recipes</a>
             </li>
-
             <li class="nav-item" th:classappend="${menuoption}=='makroudhs'?'active':''">
                 <a class="nav-link"  href="/makroudhs">Makhrouds</a>
             </li>
@@ -36,8 +35,8 @@
             <li class="nav-item" th:classappend="${menuoption}=='kitfo'?'active':''">
                 <a class="nav-link"  href="/kitfo">Kitfo</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+            <li class="nav-item" th:classappend="${menuoption}=='pumpkin'?'active':''">
+                <a class="nav-link"  href="/pumpkin">Pumpkin Noodles</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

@@ -2,57 +2,14 @@
 <html lang="en" xmlns:th="www.thymeleaf.org">
 
 <head th:replace="/fragments/navbase::navhead">
-    <span><meta name="viewport" content="width=device-width, initial-scale=1"></span>
+
 </head>
 <body>
 <nav th:replace="/fragments/navbase::thenav(${menuoption})"></nav>
-<div class="container">
-    <h6 th:text="${menuoption}"></h6>
-    <!--Need to add background image just for page but doesn't block navbar>
-    <!--<img src="/css/Images/spice.jpg" id="bg" alt="background image"/>-->
-    <div id="foodGallery" class="carousel slide" data-ride="carousel">
+<div>
+    <!-- Add background image -->
+    <!-- Add center text "My Recipe Book" -->
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#foodGallery" data-slide-to="0" class="active"></li>
-            <li data-target="#foodGallery" data-slide-to="1"></li>
-            <li data-target="#foodGallery" data-slide-to="2"></li>
-            <li data-target="#foodGallery" data-slide-to="3"></li>
-            <li data-target="#foodGallery" data-slide-to="4"></li>
-            <li data-target="#foodGallery" data-slide-to="5"></li>
-            <li data-target="#foodGallery" data-slide-to="6"></li>
-        </ul>
-
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="/css/Images/images/wings.jpg" alt="Wings" width="1100" height="500">
-            </div>
-            <div class="carousel-item">
-                <img src="/css/Images/eggsauce.jpg" alt="Egg Sauce" width="1100" height="500">
-            </div>
-            <div class="carousel-item">
-                <img src="/css/Images/injera.jpg" alt="Injera" width="1100" height="500">
-            </div>
-            <div class="carousel-item">
-                <img src="/css/Images/images/pumpkin_noodles3.jpg" alt="Pumpkin Noodle" width="1100" height="500">
-            </div>
-            <div class="carousel-item">
-                <img src="/css/Images/images/kitfo.jpeg" alt="Kitfo" width="1100" height="500">
-            </div>
-            <div class="carousel-item">
-                <img src="/css/Images/makroudhs.jpg" alt="Makroudhs" width="1100" height="500">
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#foodGallery" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#foodGallery" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
 </div>
 <span th:replace="/fragments/navbase::scripts"></span>
 </body>

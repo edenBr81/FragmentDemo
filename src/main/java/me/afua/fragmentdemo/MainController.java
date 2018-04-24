@@ -13,6 +13,12 @@ public class MainController {
         return "index";
     }
 
+    @RequestMapping("/listrecipes")
+    public String showListRecipes(Model model) {
+        model.addAttribute("menuoption", "List Recipes");
+        return "listrecipes";
+    }
+
     @RequestMapping("/makroudhs")
     public String showMakroudhs(Model model)
     {
@@ -41,7 +47,7 @@ public class MainController {
 
     @RequestMapping("/recipe")
     public String showRecipe(Model model) {
-        model.addAttribute("menuoption", "recipe");
+        model.addAttribute("menuoption", "wings");
         return "recipe";
     }
 
